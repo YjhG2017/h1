@@ -1,4 +1,5 @@
 
+
 import java.util.ArrayList;
 
 public class BowlingGame {
@@ -130,7 +131,8 @@ public class BowlingGame {
     } 	
     public static int string2Num(String s){
     	int num;
-    	switch(s) 
+    	/*
+    	 * switch(s) 
 
     	{ 
     	case "-": num=0;break; 
@@ -147,7 +149,33 @@ public class BowlingGame {
 
     	default: System.out.println("ณ๖ดํมห"); num=0;break; 
 
-    	} 
+    	}
+    	 */
+    	if (s.equals("-")){
+    		num=0;
+    	}else if(s.equals("1")){
+    		num=1;
+    	}else if(s.equals("2")){
+    		num=2;
+    	}else if(s.equals("3")){
+    		num=3;
+    	}else if(s.equals("4")){
+    		num=4;
+    	}else if(s.equals("5")){
+    		num=5;
+    	}else if(s.equals("6")){
+    		num=6;
+    	}else if(s.equals("7")){
+    		num=7;
+    	}else if(s.equals("8")){
+    		num=8;
+    	}else if(s.equals("9")){
+    		num=9;
+    	}else if(s.equals("X")){
+    		num=10;
+    	}else{
+    		num=0;
+    	}
     	
     	return num;
     }
